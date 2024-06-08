@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>G-Unite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/icons/my-logo%20icon.png">
+    <script src="main.js"></script>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="author" content="Gian .Y.R">
+    <meta name="description" content="This Web contains all the things i am learning how to make a website">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html"><img class="my-logo" src="assets/img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <img src="assets/img/icons/close.png" class="fa" onclick="hideMenu()">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="epilogue/index.html">BLOG</a></li>
+                    <li><a href="#cta">CONTACT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                </ul>
+            </div>
+            <img src="assets/img/icons/menu.png" class="fa" onclick="showMenu()">
+        </nav>
+    </header>
+    <main>
+        <div class="text-box">
+            <h1 class="my-name">Hi, My Name is Gian Yunus Ramdani</h1>
+            <p class="my-description">
+                Saya dari Kelas XI TKJ-1
+            </p>
+            <a href="" class="learn-btn">Learn More</a>
+        </div>
+        <!-----Tools That I Use----->
+        <section class="tools">
+            <h1 class="tools-name">
+                Tools
+            </h1>
+            <p class="tools-desc">
+                Inilah alat-alat yang saya gunakan dalam pembuatan website.
+            </p>
+            <div class="row">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="tools-link" target="_blank" title="This takes you to HTML Documentation">
+                    <div class="tools-col">
+                        <img src="assets/img/html.png" alt="html-img" class="tools-img" title="HTML (Hyper Text Language Markup)">
+                        <h3>HTML</h3>
+                    </div>
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" class="tools-link" target="_blank" title="This takes you to CSS Documentation">
+                    <div class="tools-col">
+                        <img src="assets/img/CSS3.png" alt="css-img" class="tools-img" title="CSS (Cascading Style Sheets)">
+                        <h3>CSS</h3>
+                    </div>
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="tools-link" target="_blank" title="This takes you to Javascript Documentation">
+                    <div class="tools-col">
+                        <img src="assets/img/Javascript.svg" alt="javascript-img" class="tools-img" title="Javascript (A Programming language)">
+                        <h3>Javascript</h3>
+                    </div>
+                </a>
+                <a href="https://brackets.io/" class="tools-link" target="_blank" title="This takes you to Official Brackets Website">
+                    <div class="tools-col">
+                        <img src="assets/img/Brackets.png" alt="brackets-img" class="tools-img" title="Brackets (A Text Editor)">
+                        <h3>Brackets</h3>
+                    </div>
+                </a>
+                <a href="https://www.mozilla.org/id/firefox/new/" class="tools-link" target="_blank" title="This takes you to Official Firefox Website">
+                    <div class="tools-col">
+                        <img src="assets/img/Firefox.png" alt="firefox-img" class="tools-img" title="Mozilla firefox (A Browser)">
+                        <h3>Mozilla Firefox</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-------------------Material-------------------------------->
+        <section class="materials">
+            <h1 class="materials-name">Materials</h1>
+            <p class="materials-desc">
+                Materi yang saya gunakan dan deskripsi pembuatan website.
+            </p>
+            <div class="row">
+
+                <div class="materials-col">
+                    <a href="fullmotion/index.html" class="materials-link">
+                    <img src="assets/img/mats-how-to-make-web.png" alt="materi">
+                    <div class="layer">
+                        <h3>Materi yang Saya Gunakan dalam Pembuatan Website</h3>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="materials-col">
+                    <a href="generic.html" class="materials-link">
+                    <img src="assets/img/desc-how-to-make-web.png" alt="deskripsi membuat website">
+                    <div class="layer">
+                        <h3>Deskripsi Pembuatan Website</h3>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-------------------------- Call to Action ------------------------->
+        <section class="cta" id="cta">
+            <h1>Business Inquiries</h1>
+            <a href="" class="learn-btn">CONTACT US</a>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer" id="about">
+    <h3>About</h3>
+    <p>Tugas Web Design ASJ</p>
+    <div class="about-icon">
+        <a href="mailto:gianyunus03@gmail.com"><img src="assets/img/icons/email.png" alt="email"></a>
+    </div>
+    </footer>
+    <!-------Javascript for Menu------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
