@@ -34,6 +34,7 @@ nav{
     list-style: none;
     display: inline-block;
     padding: 8px 14px;
+    cursor: pointer;
 }
 
 .nav-links ul li a{
@@ -75,7 +76,7 @@ nav{
     width: 0;
     animation: typewriter 1.5s steps(32, end) forwards, blinking 1s infinite;
     white-space: nowrap;
-      border-right: 2px solid;
+    border-right: 2px solid;
 }
 
 
@@ -394,4 +395,5 @@ nav .fa{
 
 .about-icon img {
     height: 30px;
+    cursor: pointer;
 }
